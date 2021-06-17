@@ -33,6 +33,8 @@ These additional references should also help you:
 
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
+$ docker run -d --name mysql5 -p3306:3306 -v /etc/localtime:/etc/localtime -e MYSQL_ROOT_PASSWORD=123456 mysql:5.7
+
 $ docker build -t kotlin-bbs .
 
 $ docker run --rm -p 8090:8080 -e MYSQL_HOST:mysql5 --link mysql5 kotlin-bbs
